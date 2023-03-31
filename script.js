@@ -13,7 +13,7 @@ async function getData(url = "") {
 function countTo(viewCount) {
     let from = 0
     let to = viewCount;
-    let step = to > from ? 462960 : -462960;
+    let step = to > from ? 412960 : -412960;
     let interval = 3;
 
     if(from >= to){
@@ -30,10 +30,17 @@ function countTo(viewCount) {
         }
     }, interval);
 };
-getData("https://app.ytjobs.co/api/talents/1040").then((data) => {
-    var totalViewCount = data.youtubeVideos.statistics.views;
-    var totalVideoCount = data.youtubeVideos.statistics.counts;
-    document.querySelector("#videoCount").textContent = totalVideoCount;
-    countTo(totalViewCount);
-});
+        
 
+
+$( document ).ready(function() {
+    $("#statsLink").click(function(){
+        gsap.to(window, {duration: 1, scrollTo: "#aboutSection"});
+    });
+        getData("https://app.ytjobs.co/api/talents/1040").then((data) => {
+            var totalViewCount = data.youtubeVideos.statistics.views;
+            var totalVideoCount = data.youtubeVideos.statistics.counts;
+            document.querySelector("#videoCount").textContent = totalVideoCount;
+            countTo(totalViewCount);
+        });
+});
