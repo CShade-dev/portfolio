@@ -87,6 +87,7 @@ body {
     font-weight: 500;
     color: black;
     font-size: 1.35vw;
+    max-width: 20vw;
 }
 .top4views {
     text-decoration: none;
@@ -126,4 +127,7 @@ body {
 
 .white, .top4views {
     background: white;
+}
+.top5div {
+    font-size: 0;
 }
