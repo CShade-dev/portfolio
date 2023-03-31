@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-h1, p {
+h1, p, span {
     font-family: 'Inter', sans-serif;
 }
 body {
@@ -87,7 +87,6 @@ body {
     font-weight: 500;
     color: black;
     font-size: 1.35vw;
-    display: inline;
 }
 .top4views {
     text-decoration: none;
@@ -98,9 +97,6 @@ body {
 }
 #top4 {
     display: flex;
-}
-.top5div {
-    background-color: white;
 }
 #views {
     background-color: white;
@@ -120,7 +116,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.viewsContainer p {
+.viewsContainer * {
     text-align: left;
 }
 .viewsCounter {
@@ -128,4 +124,6 @@ body {
     display: inline;
 }
 
- 
+.white, .top4views {
+    background: white;
+}
