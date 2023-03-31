@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1, p {
+    font-family: 'Inter', sans-serif;
+}
+body {
+    display: block;
+}
+.headerText {
+    font-weight: 600;
+}
+.bodyText {
+    font-family: 'Source Code Pro', monospace;
+}
+.sectionLink:hover, .logoLink:hover {
+    color: gray;
+}
+#header {
+    width: 100vw;
+    height: 10vh;
+    position: absolute;
+    z-index: 2;
+}
+#navBar {
+    position: sticky;
+}
+.sectionLink {
+    float: right;
+}
+.headerText {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline;
+}
+.logoLink {
+    float: left;
+}
+#frontPage {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+#centerFront {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#centerFrontText{
+    text-align: center;
+    font-size: 3.25em;
+}
+#centerFrontSubtext {
+    text-align: center;
+    font-size: 1.25em;
+}
+#aboutSection {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.sectionBorder {
+    height: 15vh;
+    width: 100vw;
+    background-color: black;
+}
+#statsHeader {
+    display: inline-flex;
+    border-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.75em;
+    background-color: white;
+}
+.top4thumbnail {
+    max-width: 20vw;
+    height: auto;
+}
+.top4title {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    font-size: 1.35vw;
+    display: inline;
+}
+.top4views {
+    text-decoration: none;
+    font-weight: 200;
+    color: black;
+    font-size: 1.15vw;
+    display: inline;
+}
+#top4 {
+    display: flex;
+}
+.top5div {
+    background-color: white;
+}
+#views {
+    background-color: white;
+    font-size: 3em;
+}
+#viewsCaption {
+    background-color: white;
+    display: block;
+    text-align: left;
+}
+#aboutSectionHeader {
+    display: flex;
+    justify-content: center;
+}
+.viewsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.viewsContainer p {
+    text-align: left;
+}
+.viewsCounter {
+    background-color: white;
+    display: inline;
+}
+
+ 
