@@ -28,6 +28,7 @@ body {
 }
 .sectionLink {
     float: right;
+    cursor: pointer;
 }
 .headerText {
     text-align: center;
@@ -37,6 +38,7 @@ body {
 }
 .logoLink {
     float: left;
+    cursor: pointer;
 }
 #frontPage {
     width: 100vw;
@@ -161,6 +163,7 @@ body {
     z-index: -1;
     object-fit: cover;
     opacity: 40%;
+    visibility: hidden;
 }
 .videoBackground {
     background-color: white;
@@ -168,4 +171,33 @@ body {
     height: 100vh;
     position: absolute;
     z-index: -2;
+}
+.projectsSection {
+    width: 100vw;
+    background-color: black;
+    height: auto;
+}
+.project {
+    width: 100vw;
+    background-color: black;
+    height: 30vh;
+    border-top: 2px solid white;
+}
+.project:last-child {
+    border-bottom: 2px solid white;
+}
+#projectsHeader {
+    display: inline-flex;
+    margin-bottom: 25vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.75em;
+    background-color: white;
+}
+#projectsSectionHeader {
+    display: flex;
+    justify-content: center;
 }
