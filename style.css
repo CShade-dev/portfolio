@@ -201,3 +201,12 @@ body {
     display: flex;
     justify-content: center;
 }
+.projectText {
+    font-size: 3.75em;
+    color: white;
+    white-space: nowrap;
+    overflow-y:hidden;
+    width: fit-content;
+    
+    height: 10vh;
+  }

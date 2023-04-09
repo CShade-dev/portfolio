@@ -50,6 +50,26 @@ $( document ).ready(function() {
             }
         });
 
+        gsap.utils.toArray(".projectText").forEach((child, index) => {
+            const direction = index % 2 === 0 ? 1 : -1;
+            
+            gsap.fromTo(
+              child,
+              { x: direction * 500 },
+              {
+                x: 0,
+                duration: 1,
+                scrollTrigger: {
+                  trigger: ".projectsSection",
+                  start: "top top",
+                  end: "bottom bottom",
+                  scrub: true,
+                  markers: false,
+                },
+              }
+            );
+        });
+
         tl.to(".backgroundChange", {
             backgroundColor: "black",
             duration: 0.65,
