@@ -52,12 +52,13 @@ $( document ).ready(function() {
 
         gsap.utils.toArray(".projectText").forEach((child, index) => {
             const direction = index % 2 === 0 ? 1 : -1;
+            const elementWidth = child.offsetWidth;
             
             gsap.fromTo(
               child,
-              { x: direction * 500 },
+              { x: -1 * elementWidth / 2 },
               {
-                x: 0,
+                x: "+=" + (direction * 500),
                 duration: 1,
                 scrollTrigger: {
                   trigger: ".projectsSection",
