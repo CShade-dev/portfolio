@@ -7,6 +7,14 @@ h1, p, span {
 }
 body {
     display: block;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+html {
+    scrollbar-width: none;
 }
 .headerText {
     font-weight: 600;
@@ -20,11 +28,11 @@ body {
 #header {
     width: 100vw;
     height: 10vh;
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: 2;
-}
-#navBar {
-    position: sticky;
+    color: black;
+    mix-blend-mode: difference;
 }
 .sectionLink {
     float: right;
@@ -180,7 +188,7 @@ body {
 .project {
     width: 100vw;
     background-color: black;
-    height: 30vh;
+    height: 25vh;
     border-top: 2px solid white;
 }
 .project:last-child {
@@ -188,7 +196,7 @@ body {
 }
 #projectsHeader {
     display: inline-flex;
-    margin-bottom: 25vh;
+    margin-bottom: 10vh;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -202,11 +210,42 @@ body {
     justify-content: center;
 }
 .projectText {
-    font-size: 3.75em;
+    font-size: 4.75em;
     color: white;
     white-space: nowrap;
     overflow-y:hidden;
     width: fit-content;
-    
+    height: 20vh;
+  }
+  .descText {
+    font-size: 1.15em;
+    margin-left: 1vw;
+  }
+  .navBar {
+    margin-right: 1vw;
+  }
+  .filters > div {
+    background-color: white;
+  }
+  .filters {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
     height: 10vh;
+  }
+  .filtertoggle {
+     display: inline-flex;
+     margin: auto;
+     cursor: pointer;
+  }
+  .filtertoggle:hover {
+    color: gray;
+  }
+  .filterText {
+    text-align: center;
+    font-size: 1.5em; 
   }
