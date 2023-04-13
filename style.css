@@ -249,3 +249,23 @@ html {
     text-align: center;
     font-size: 1.5em; 
   }
+  #resumeHeader {
+    display: inline-flex;
+    margin-bottom: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.75em;
+    background-color: white;
+  }
+  .resumeSectionHeader {
+    display: flex;
+    justify-content: center;
+}
+.resumeSection {
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+}

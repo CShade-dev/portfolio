@@ -33,6 +33,7 @@ function countTo(viewCount) {
 }
 
 $(document).ready(function () {
+    $(this).scrollTop(0);
     let filterToggled = false;
 
   $("#statsLink").click(function () {
@@ -41,6 +42,9 @@ $(document).ready(function () {
 
   $("#projectsLink").click(function () {
     gsap.to(window, { duration: 1, scrollTo: ".projectsSection" });
+  });
+  $("#resumeLink").click(function () {
+    gsap.to(window, { duration: 1, scrollTo: ".resumeSection" });
   });
 
   var tl = gsap.timeline({
@@ -66,8 +70,8 @@ $(document).ready(function () {
         scrollTrigger: {
           trigger: "#aboutSection",
           start: "center center",
-          endTrigger: ".projectsSection",
-          end: "bottom bottom",
+          endTrigger: ".resumeSection",
+          end: "center center",
           scrub: true,
           markers: false,
         },
