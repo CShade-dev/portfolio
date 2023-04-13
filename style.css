@@ -100,9 +100,9 @@ html {
 }
 .top4views {
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 300;
     color: black;
-    font-size: 1.15vw;
+    font-size: 1.2vw;
     display: inline;
 }
 #top4 {
@@ -328,6 +328,29 @@ html {
     margin-left: 6.5vw;
 }
 .projectLinks {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
+.projectLinks:hover {
+    color: black;
+    transition: color 1s;
+}
+/* Default styles for h1.top4title */
+h1.top4title {
+    font-size: 1.2rem;
+  }
+  
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    h1.top4title {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media only screen and (max-width: 480px) {
+    h1.top4title {
+      font-size: 0.5rem;
+    }
+  }
+  
