@@ -190,6 +190,7 @@ html {
     background-color: black;
     height: 25vh;
     border-top: 2px solid white;
+    cursor: pointer;
 }
 .project:last-child {
     border-bottom: 2px solid white;
@@ -220,6 +221,10 @@ html {
   .descText {
     font-size: 1.15em;
     margin-left: 1vw;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    margin-right: 0;
   }
   .navBar {
     margin-right: 1vw;
@@ -268,4 +273,61 @@ html {
         height: 100vh;
         width: 100vw;
         background-color: black;
+}
+.arrow {
+    display: inline;
+    float: right;
+    font-size: 4.15em;
+}
+.clientHeaderText {
+    font-size: 3.75em;
+    color: black;
+    white-space: nowrap;
+    overflow-y:hidden;
+    width: fit-content;
+    height: 10vh;
+    background-color: white;
+  }
+  .clientHeader {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .clientBodyText {
+    background-color: white;
+    color: black;
+    width: 40vw;
+    margin-top: 5vh;
+    margin-right: auto;
+    height: 40vh;
+  }
+  .mainVideo {
+    width: 40vw;
+    height: 40vh;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: 5vw;
+  }
+  .clientBodyContainer {
+    display: flex;
+    width: 100vw;
+  }
+.clientExamplesContainer {
+    display: flex;
+    width: 100vw;
+    margin-top: 8vh;
+}
+.displayVideo {
+    width: 20vw;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.extraInfoContainer {
+    margin-left: 6.5vw;
+}
+.projectLinks {
+    text-decoration: none;
+    color: white;
 }
