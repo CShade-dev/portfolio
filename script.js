@@ -128,5 +128,13 @@ $(document).ready(function () {
             filterToggled = false;
         }
         })
-
+        $(".project").hover(function(){
+            $( this ).animate({backgroundColor: "white"});
+            $( this ).children(".projectLinks").children().animate({color: "black"});
+            $( this ).children(".projectLinks").animate({color: "black"});
+        }, function(){
+            $( this ).animate({backgroundColor: "black"});
+            $( this ).children(".projectLinks").children().animate({color: "white"});
+            $( this ).children(".projectLinks").animate({color: "white"});
+        });
 });

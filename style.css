@@ -100,9 +100,9 @@ html {
 }
 .top4views {
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 300;
     color: black;
-    font-size: 1.15vw;
+    font-size: 1.2vw;
     display: inline;
 }
 #top4 {
@@ -190,6 +190,7 @@ html {
     background-color: black;
     height: 25vh;
     border-top: 2px solid white;
+    cursor: pointer;
 }
 .project:last-child {
     border-bottom: 2px solid white;
@@ -220,6 +221,10 @@ html {
   .descText {
     font-size: 1.15em;
     margin-left: 1vw;
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+    margin-right: 0;
   }
   .navBar {
     margin-right: 1vw;
